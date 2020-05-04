@@ -1,0 +1,83 @@
+<div class="kataxorisi-form">
+  <div class="form-group">
+    <label for="kodikos">Κωδικός</label>
+    <input
+      type="text"
+      class="form-control"
+      id="kodikos"
+      aria-describedby="kodikos"
+      placeholder="Κωδικός"
+      [(ngModel)]="kodikos"
+    />
+  </div>
+  <div class="form-group">
+    <label for="imerominia">Ημερομηνία</label>
+    <input
+      type="date"
+      class="date-input"
+      class="form-control"
+      id="imerominia"
+      aria-describedby="imerominia"
+      placeholder="Ημερομηνία"
+      [(ngModel)]="imerominia"
+    />
+  </div>
+  <div class="form-group">
+    <label for="eidos">Είδος</label>
+    <input
+      type="text"
+      class="form-control"
+      id="eidos"
+      aria-describedby="eidos"
+      placeholder="Είδος Οχήματος"
+      [(ngModel)]="eidos"
+    />
+  </div>
+  <div class="form-group">
+    <label for="marka">Μάρκα</label>
+    <input
+      type="text"
+      class="form-control"
+      id="marka"
+      aria-describedby="marka"
+      placeholder="Μάρκα Οχήματος"
+      [(ngModel)]="marka"
+    />
+  </div>
+  <div class="form-group">
+    <label for="color">Χρώμα</label>
+    <input
+      type="text"
+      class="form-control"
+      id="color"
+      aria-describedby="color"
+      placeholder="Χρώμα Οχήματος"
+      [(ngModel)]="color"
+    />
+  </div>
+  <div class="form-group">
+    <label for="address">Διεύθυνση</label>
+    <input
+      type="text"
+      class="form-control"
+      id="address"
+      aria-describedby="address"
+      placeholder="Χρώμα Οχήματος"
+      [(ngModel)]="address"
+    />
+  </div>
+  <label for="exampleFormControlTextarea1">Παρατηρήσεις</label>
+  <textarea
+    class="form-control"
+    id="exampleFormControlTextarea1"
+    rows="3"
+    [(ngModel)]="paratiriseis"
+  ></textarea>
+  <button
+    type="submit"
+    class="btn btn-primary submit-button"
+    (click)="submitIt()"
+  >
+    Καταχώρηση
+  </button>
+</div>
